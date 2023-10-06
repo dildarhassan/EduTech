@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/courseImage"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:riv_oval="true"
+                    android:scaleType="centerCrop"
+                    android:background="@color/teal_200"
+                    app:riv_mutate_background="true">
+
+                </com.makeramen.roundedimageview.RoundedImageView>
+
+                <TextView
+                    android:id="@+id/courseName"
+                    android:text="About the course"
+                    android:layout_width="283dp"
+                    android:layout_height="40dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:background="@drawable/square"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center">
+
+                </TextView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</layout>

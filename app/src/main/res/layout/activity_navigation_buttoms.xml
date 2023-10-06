@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home">
+
+    ////////////////////////
+    <androidx.drawerlayout.widget.DrawerLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/drawer_layout"
+        android:fitsSystemWindows="true"
+        tools:openDrawer="start"
+        tools:context=".MainActivity">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/frame_container"/>
+        </LinearLayout>
+        <com.google.android.material.navigation.NavigationView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/nav_view"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/nav_header"
+            app:menu="@menu/nav_menu"
+            app:itemIconTint="@color/lavender"
+            app:itemTextColor="@color/lavender"/>
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+    //////////////////////////////////
+
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_alignParentBottom="true"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:id="@+id/challenge_layout"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:orientation="horizontal"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:gravity="center"
+            android:weightSum="1">
+            <ImageView
+                android:id="@+id/challengeImage"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_challenge"/>
+
+            <TextView
+                android:id="@+id/challengeTxt"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Challenge"
+                android:textStyle="bold"
+                android:textColor="@color/home"
+                android:layout_marginStart="10dp"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/homelayout"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:orientation="horizontal"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:gravity="center"
+            android:weightSum="1">
+            <ImageView
+                android:id="@+id/homeImage"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_home"/>
+
+            <TextView
+                android:id="@+id/homeTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textStyle="bold"
+                android:textColor="@color/home"
+                android:layout_marginStart="10dp"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/my_courses_layout"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:orientation="horizontal"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:gravity="center"
+            android:weightSum="1">
+            <ImageView
+                android:id="@+id/my_coursesImage"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_my_courses"/>
+
+            <TextView
+                android:id="@+id/my_coursesTxt"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Course"
+                android:textStyle="bold"
+                android:textColor="@color/home"
+                android:layout_marginStart="10dp"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/profile_layout"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:orientation="horizontal"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:gravity="center"
+            android:weightSum="1">
+            <ImageView
+                android:id="@+id/profileImage"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_profile"/>
+
+            <TextView
+                android:id="@+id/profileTxt"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textStyle="bold"
+                android:textColor="@color/home"
+                android:layout_marginStart="10dp"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

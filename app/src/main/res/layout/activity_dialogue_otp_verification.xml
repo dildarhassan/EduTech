@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OTP VERIFICATION"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#CC000000"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="we have send a varification code to."
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:textColor="#80000000" />
+
+                <TextView
+                    android:id="@+id/mobileNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#CC000000" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="1dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <EditText
+                        android:id="@+id/et_otp1"
+                        android:layout_width="42dp"
+                        android:layout_height="43dp"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_black_blue10_10"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:maxLines="1"
+                        android:textColor="#000000"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/et_otp2"
+                        android:layout_width="42dp"
+                        android:layout_height="43dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_black_blue10_10"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:maxLines="1"
+                        android:textColor="#000000"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/et_otp3"
+                        android:layout_width="42dp"
+                        android:layout_height="43dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_black_blue10_10"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:maxLines="1"
+                        android:textColor="#000000"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/et_otp4"
+                        android:layout_width="42dp"
+                        android:layout_height="43dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_black_blue10_10"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:maxLines="1"
+                        android:textColor="#000000"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/et_otp5"
+                        android:layout_width="42dp"
+                        android:layout_height="43dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_black_blue10_10"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:maxLines="1"
+                        android:textColor="#000000"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/et_otp6"
+                        android:layout_width="42dp"
+                        android:layout_height="43dp"
+                        android:layout_marginEnd="3dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_black_blue10_10"
+                        android:gravity="center"
+                        android:inputType="number"
+
+                        android:maxLength="1"
+                        android:maxLines="1"
+                        android:textColor="#000000"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_resend_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="190dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Resend Code"
+                    android:textColor="#99000000" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/bt_verifyBtn"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:paddingStart="30dp"
+                    android:paddingEnd="30dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/round_black_brown_100"
+                    android:layout_gravity="center"
+                    android:text="Verify OTP" />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</layout>
